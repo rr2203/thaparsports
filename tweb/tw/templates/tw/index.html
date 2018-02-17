@@ -1,0 +1,324 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Thapar Sports</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="static/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{% static  'css/main.css' %}" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="static/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" href="static/css/ie8.css" />
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<link rel="stylesheet" href="static/css/gallery.theme.css">
+		<link rel="stylesheet" href="static/css/gallery.css">
+	</head>
+		
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="/">Thapar Sports</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li>
+								<a href="#one">Events</a>
+								<ul>
+									<li><a href="#two">Upcoming</a></li>
+									<li><a href="#three">Recent</a></li>
+								</ul>
+							</li>
+							<li><a href="#gallery">Gallery</a></li>
+							<li><a href="#four">Achievements</a></li>
+							<li><a href="#five">Sports</a></li>
+							<li><a href="#six">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2 style='color: yellow'><center>Sudore. Sanguis. Studium</center></h2>
+							<p><h3><center>We play with</center></h3></p>
+							<h2 style='color: yellow'><center>Sweat. Blood. Zeal</center></h2>
+							<p><h3><center>Fair Play is our Play.!</center></h3></p>
+						</header>
+						<span class="image"><img src="{% static 'images/pic01.jpg' %}" alt="" /></span>
+			</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="{% static 'images/pic02.jpg' %}" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="4u 12u$(medium)">
+									<header>
+										<h2>Events</h2>
+										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+									</header>
+								</div>
+								<div class="4u 12u$(medium)">
+									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
+									augue varius tempus lobortis porttitor accumsan consequat
+									adipiscing lorem dolor.</p>
+								</div>
+								<div class="4u$ 12u$(medium)">
+									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
+									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
+									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
+									ipsum dolor nullam.</p>
+									<!-- <a href="#" class="button">View All</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right">
+					<span class="image fit main"><img src="{% static 'images/pic03.jpg' %} " alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Upcoming Events</h2>
+							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="/eventlist/" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="{% static 'images/pic04.jpg' %}" alt="" /></span>
+					<div class="content">
+						<header>
+							<h2>Recent Events</h2>
+							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+						</header>
+						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul class="actions">
+							<li><a href="/r_eventlist/" class="button">Learn More</a></li>
+						</ul>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</section>
+
+
+				<!-- <section id="gallery">
+					<h2><center>Gallery</center></h2>
+					<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="{% static 'images/pic01.png' %}" style="width:100%" align="middle">
+  <img class="mySlides" src="{% static 'images/pic01.jpg' %}" style="width:100%" align="middle">
+  <img class="mySlides" src="{% static 'images/pic01.png' %}" style="width:100%" align="middle">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+</script>
+				</section> -->
+				<section id="gallery" class="wrapper style1 special fade-up">
+				<div class="container">
+				<header class="major">
+					<h2 align="middle">Gallery</h2>
+				</header>
+				<div class="gallery autoplay items-3">
+					<div id="item-1" class="control-operator"></div>
+					<div id="item-2" class="control-operator"></div>
+					<div id="item-3" class="control-operator"></div>
+
+					<figure class="item">
+						<img src="{% static 'images/pic022.jpg' %}" alt="" height="100%" width="100%" />
+					</figure>
+
+					<figure class="item">
+						<img src="{% static 'images/pic055.jpg' %}" alt="" height="100%" width="100%"/>
+					</figure>
+
+					<figure class="item">
+						<img src="{% static 'images/pic044.jpg' %}" alt="" height="100%" width="100%"/>
+					</figure>
+
+					<div class="controls">
+						<a href="#item-1" class="control-button">•</a>
+						<a href="#item-2" class="control-button">•</a>
+						<a href="#item-3" class="control-button">•</a>
+					</div>
+				</div>
+				<br><a href="#" class="button">View All</a>
+				</div>
+			</section>
+
+
+			<!-- Four -->
+				<section id="four" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="{% static 'images/pic05.jpg' %}" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="4u 12u$(medium)">
+									<header>
+										<h2>Our Achievements</h2>
+										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+									</header>
+								</div>
+								<div class="4u 12u$(medium)">
+									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
+									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
+									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
+									augue varius tempus lobortis porttitor accumsan consequat
+									adipiscing lorem dolor.</p>
+								</div>
+								<div class="4u$ 12u$(medium)">
+									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
+									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
+									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
+									ipsum dolor nullam.</p>
+									<a href="/Our_achievements/" class="button">View All</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#five" class="goto-next scrolly">Next</a>
+				</section>
+			<!-- Five -->
+				<section id="five" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>Sports Infrastructure</h2>
+							<p>The institute has several playgrounds and well-maintained athletic track to encourage the students to take part in different games</p>
+						</header>
+						<div class="box alt">
+							<div class="row uniform">
+								<section class="4u 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-area-chart"></span>
+									<h3><a href="#">Cricket</a></h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-comment"></span>
+									<h3><a href="#">Football</a></h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u$ 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-flask"></span>
+									<h3><a href="#">Badminton</a></h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-paper-plane"></span>
+									<h3><a href="#">Lawn Tennis</a></h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-file"></span>
+									<h3><a href="#">Basketball</a></h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="4u$ 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-lock"></span>
+									<h3><a href="#">Swimming</a></h3>
+									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+							</div>
+						</div>
+						<footer class="major">
+							<ul class="actions">
+								<li><a href="#" class="button">View All</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+
+			<!-- Six -->
+				<section id="six" class="wrapper style2 special fade">
+					<div class="container">
+						<h3>Leave us a Message</h3>
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" value="" placeholder="Name" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email" />
+										</div>
+										
+										<div class="12u$">
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="special" /></li>
+											
+											</ul>
+										</div>
+									</div>
+								</form>
+								<br>
+								<h3>OR</h3><br>
+								<h1>Reach us at:</h1><br>
+								Sports Office, Thapar Institute of Engineering & Technology, Patiala-147001<br>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#https://twitter.com/TU_Patiala" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#https://www.facebook.com/officialTIET/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#https://www.linkedin.com/school/485592/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#https://www.instagram.com/tietofficial/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy;2018 Thapar Institute Of Engineering & Technology. All rights reserved.</li><!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'js/skel.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<!--[if lte IE 8]><script src="static/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
