@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Candid a Photo Gallery Category Flat Bootstrap Responsive Website| Home :: w3layouts</title>
+<title>Gallery</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -28,14 +28,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 <!-- //online fonts -->
 <!-- font-awesome-icons -->
-<link href="static/abcd/css/font-awesome.css" type="text/css" rel="stylesheet"> 
+<link href="static/abcd/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Assistant:700" rel="stylesheet"> 
 <!-- //font-awesome-icons -->
 </head>
 <body>
 <div class="agileits_main">
 <!-- header -->
 <div class="w3_agile_logo">
-	<h1 class="text-center" style><a href="index.html">Gallery</a></h1>
+	<h1 class="text-center" style="font-family:'Assistant'"><a href="index.html">Gallery</a></h1>
 </div>
 <!-- banner -->
 <div class="w3_banner">
@@ -194,27 +195,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  <div class="gallery_grid agileits_w3layouts">
 	    <div class="col-md-6  col-sm-6 col-xs-6 grid_w3">
 			<div class="grid-1">
-				<a class="cm-overlay" href="static/abcd/images/2.jpg">
-					<img src="static/abcd/images/2.jpg" alt=" " class="img-responsive" />
+				<a class="cm-overlay" href="{{blog.image1.url}}">
+					<img src="{{blog.image1.url}}" alt=" " class="img-responsive" />
 					 <div class="w3agile-text w3agile-text-smal1">
-						<h5>Snap shot</h5>
+						<h5>{{blog.title}}</h5>
 					</div>
 				</a>
 			</div>
 			 <div class="sub_grid gallery_w3l">
 				   <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-c grid_w3l">
-						<a class="cm-overlay" href="static/abcd/images/14.jpg">
-							<img src="static/abcd/images/14.jpg" alt=" " class="img-responsive" />
+						<a class="cm-overlay" href="{{blog.image2.url}}">
+							<img src="{{blog.image2.url}}" alt=" " class="img-responsive" />
 							<div class="w3agile-text w3agile-text-small">
-								<h5>Snap shot</h5>
+								<h5>{{blog.title}}</h5>
 					        </div>
 						</a>
 					</div>
 				   <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-b grid_w3l">
-					 	<a class="cm-overlay" href="images/13.jpg">
-							<img src="static/abcd/images/13.jpg" alt=" " class="img-responsive" />
+					 	<a class="cm-overlay" href="{{blog.image3.url}}">
+							<img src="{{blog.image3.url}}" alt=" " class="img-responsive" />
 							<div class="w3agile-text w3agile-text-smal1">
-								<h5>Snap shot</h5>
+								<h5>{{blog.title}}</h5>
 							</div>
 						</a>
 					</div>
@@ -224,28 +225,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-6 col-sm-6 col-xs-6 grid_w3">
 		   <div class="sub_grid">
 			   <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-c grid_w3l">
-          			<a class="cm-overlay" href="static/abcd/images/15.jpg">
-						<img src="static/abcd/images/15.jpg" alt=" " class="img-responsive" />
+          			<a class="cm-overlay" href="{{blog.image4.url}}">
+						<img src="{{blog.image4.url}}" alt=" " class="img-responsive" />
 						<div class="w3agile-text w3agile-text-small">
-							<h5>Snap shot</h5>
+							<h5>{{blog.title}}</h5>
 						</div>
 					</a>
 			   </div>
 			   <div class="col-md-6 col-sm-6 col-xs-6 grid-1 grid-d grid_w3l">
-					<a class="cm-overlay" href="static/abcd/images/16.jpg">
-						<img src="static/abcd/images/16.jpg" alt=" " class="img-responsive" />
+					<a class="cm-overlay" href="{{blog.image5.url}}">
+						<img src="{{blog.image5.url}}" alt=" " class="img-responsive" />
 						<div class="w3agile-text w3agile-text-smal1">
-							<h5>Snap shot</h5>
+							<h5></h5>
 						</div>
 					</a>
 				</div>
 				 <div class="clearfix"></div>
 			   </div>
 		    <div class="grid-1 grid-2">
-				<a class="cm-overlay" href="static/abcd/images/7.jpg">
-					<img src="static/abcd/images/7.jpg" alt=" " class="img-responsive" />
+				<a class="cm-overlay" href="{{blog.image6.url}}">
+					<img src="{{blog.image6.url}}" alt=" " class="img-responsive" />
 					<div class="w3agile-text w3agile-text-smal1">
-							<h5>Snap shot</h5>
+							<h5></h5>
 					</div>
 				</a>
 		    </div>

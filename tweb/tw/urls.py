@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^r_eventlist/$', views.r_eventlist, name='r_eventlist'),
     url(r'^Our_achievements/$', views.achieve, name='Our_achievements'),
     url(r'^eventlist/(?P<Post_id>[0-9]+)/$', views.detail, name='detail'),
+    url(r'^r_eventlist/(?P<Post_id>[0-9]+)/$', views.r_detail, name='r_detail'),
     url(r'^gallery/',include('gallery.urls')),
 ]
 
