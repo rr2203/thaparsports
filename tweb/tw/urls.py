@@ -18,6 +18,12 @@ urlpatterns = [
     url(r'^eventlist/(?P<Post_id>[0-9]+)/$', views.detail, name='detail'),
     url(r'^r_eventlist/(?P<Post_id>[0-9]+)/$', views.r_detail, name='r_detail'),
     url(r'^gallery/',include('gallery.urls')),
+    url(r'^Cricket/$', views.Cricket, name='Cricket'),
+    url(r'^Football/$', views.Football, name='Football'),
+    url(r'^Lawn_tennis/$', views.tennis, name='Lawn_tennis'),
+    url(r'^Basketball/$', views.BB, name='Basketball'),
+    url(r'^Badminton/$', views.Bd, name='Badminton'),
+    url(r'^Swimming/$', views.swim, name='Swimming'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

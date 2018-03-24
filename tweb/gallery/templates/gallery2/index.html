@@ -22,6 +22,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="static/abcd/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="static/abcd/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //stylesheet -->
+
+<link rel="stylesheet" href="static/css/ie8.css" />
+<link rel="stylesheet" href="static/css/ie9.css" />
 <!-- online fonts -->
 <link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
@@ -31,14 +34,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="static/abcd/css/font-awesome.css" type="text/css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Assistant:700" rel="stylesheet"> 
 <!-- //font-awesome-icons -->
+
+<link rel="icon" href="{% static 'images/favicon.png' %}" sizes="16x16" type="image/png">
 </head>
 <body>
-<div class="agileits_main">
-<!-- header -->
-<div class="w3_agile_logo">
-	<h1 class="text-center" style="font-family:'Assistant'"><a href="index.html">Gallery</a></h1>
-</div>
+
+	<div class="agileits_main">
+		<!-- navbar -->
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand active" style="font-family:'Assistant'" href="/">Thapar Sports</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active button special" style="font-family:'Assistant';font-size:18px"><a href="/">Home</a></li>
+     
+    </ul>
+  </div>
+</nav>
+
+
+<!-- <div class="w3_agile_logo">
+	
+	<h1 class="text-center" style="font-family:'Assistant'"><a href="#">Gallery</a></h1>
+</div> -->
+
+<br>
+<br>
+<h1 style='color: white' ><center>Gallery</center></h2>
 <!-- banner -->
+<br>
 <div class="w3_banner">
 	<div class="container">
 		<!-- <div class="slider">
@@ -91,8 +116,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	   </div>
 	</div>   
 </div>
-<!-- menu -->
-<!-- <nav class="navbar navbar-inverse ">
+
+<nav class="navbar navbar-inverse ">
 	<div class="container">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="sr-only">Toggle navigation</span>
@@ -111,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	</div>
 </nav>
-<!-- //menu -->
+ //menu -->
   <!-- </div> -->	
 <!-- //banner -->	
 <!-- home -->
@@ -185,11 +210,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  <div class="clearfix"></div>
 	  </div>	  
   </div>
- </div>  --> -->
+ </div>  --> 
 <!-- //about -->
 <!-- gallery -->
-<div class="gallery_wthree" id="gallery">
- <div class="container">
+<!-- <div class="gallery_wthree" id="gallery">
+ <div class="container"> -->
  	{% for blog in gallery %}
       <!-- <h3 class="title">gallery</h3> -->
 	  <div class="gallery_grid agileits_w3layouts">
@@ -198,7 +223,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a class="cm-overlay" href="{{blog.image1.url}}">
 					<img src="{{blog.image1.url}}" alt=" " class="img-responsive" />
 					 <div class="w3agile-text w3agile-text-smal1">
-						<h5>{{blog.title}}</h5>
+						
 					</div>
 				</a>
 			</div>
@@ -207,7 +232,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a class="cm-overlay" href="{{blog.image2.url}}">
 							<img src="{{blog.image2.url}}" alt=" " class="img-responsive" />
 							<div class="w3agile-text w3agile-text-small">
-								<h5>{{blog.title}}</h5>
+								
 					        </div>
 						</a>
 					</div>
@@ -215,7 +240,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 	<a class="cm-overlay" href="{{blog.image3.url}}">
 							<img src="{{blog.image3.url}}" alt=" " class="img-responsive" />
 							<div class="w3agile-text w3agile-text-smal1">
-								<h5>{{blog.title}}</h5>
+							
 							</div>
 						</a>
 					</div>
@@ -228,7 +253,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           			<a class="cm-overlay" href="{{blog.image4.url}}">
 						<img src="{{blog.image4.url}}" alt=" " class="img-responsive" />
 						<div class="w3agile-text w3agile-text-small">
-							<h5>{{blog.title}}</h5>
+					
 						</div>
 					</a>
 			   </div>
@@ -255,8 +280,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"></div>
 	  </div>
 	  {% endfor %}	
-</div>
-</div> -->
+<!-- </div>
+</div> --> -->
 <!-- //gallery -->
 <!-- Tooltip -->
 <div class="tooltip-content">
@@ -401,10 +426,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="social-icons agileits">
      		<ul>
-				<li><a href="#" class="fa fa-facebook icon icon-border facebook"> </a></li>
-				<li><a href="#" class="fa fa-twitter icon icon-border twitter"> </a></li>
-				<li><a href="#" class="fa fa-google-plus icon icon-border googleplus"> </a></li>
-				<li><a href="#" class="fa fa-dribbble icon icon-border dribbble"> </a></li>
+				<li><a href="https://twitter.com/TU_Patiala" class="fa fa-twitter icon icon-border twitter"> </a></li>
+				<li><a href="https://www.facebook.com/officialTIET/" class="fa fa-facebook icon icon-border facebook"> </a></li>
+				<li><a href="https://www.linkedin.com/school/485592/" class="fa fa-linkedin icon icon-border linkedin"> </a></li>
+				<li><a href="https://www.instagram.com/tietofficial/" class="fa fa-instagram icon icon-border instagram"> </a></li>
 			</ul>
 			<div class="clearfix"> </div>
 		</div> 

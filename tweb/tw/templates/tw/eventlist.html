@@ -15,16 +15,18 @@
 		<link href="https://fonts.googleapis.com/css?family=Assistant:700" rel="stylesheet">
 		<!--[if lte IE 9]><link rel="stylesheet" href="static/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="static/css/ie8.css" /><![endif]-->
+
+		<link rel="icon" href="{% static 'images/favicon.png' %}" sizes="16x16" type="image/png">
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html"></a></h1>
-					<nav id="nav" style="font-family:'Assistant'">
+				<header id="header"  style="font-family:'Assistant'">
+					<h1 id="logo"><a href="/">Thapar Sports</a></h1>
+					<nav id="nav">
 						<ul>
-							<li><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="/" class="button special">Home</a></li>
 							<!-- <li>
 								<a href="#">Layouts</a>
 								<ul>
@@ -58,7 +60,7 @@
 							<h2>{{blog.title}}</h2>
 							<p>{{ blog.content|truncatechars:40}}</p>
 						</header>
-						<p>Test/p>
+						
 						<ul class="actions">
 							<li><a href="/eventlist/{{blog.id}}" class="button">Learn More</a></li>
 						</ul>
@@ -76,7 +78,7 @@
 							<h2>{{blog.title}}</h2>
 							<p>{{ blog.content|truncatechars:40}}</p>
 						</header>
-						<p>Test/p>
+		
 						<ul class="actions">
 							<li><a href="/eventlist/{{blog.id}}" class="button">Learn More</a></li>
 						</ul>
@@ -94,10 +96,10 @@
 				
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#https://twitter.com/TU_Patiala" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#https://www.facebook.com/officialTIET/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#https://www.linkedin.com/school/485592/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#https://www.instagram.com/tietofficial/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://twitter.com/TU_Patiala" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/officialTIET/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/school/485592/" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/tietofficial/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; 2018 Thapar Institute Of Engineering & Technology. All rights reserved.</li><!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->

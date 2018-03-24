@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 18/02/2018 18:25
+  	Creation date: 06/03/2018 20:49
   	*/
 
 @font-face {
@@ -29,9 +29,10 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-swimming-figure:before { content: "\f100"; }
-.flaticon-ball-of-basketball:before { content: "\f101"; }
-.flaticon-tennis:before { content: "\f102"; }
-.flaticon-badminton:before { content: "\f103"; }
-.flaticon-soccer-ball-variant:before { content: "\f104"; }
-.flaticon-balls:before { content: "\f105"; }
+.flaticon-sprint:before { content: "\f100"; }
+.flaticon-swimming-figure:before { content: "\f101"; }
+.flaticon-ball-of-basketball:before { content: "\f102"; }
+.flaticon-tennis:before { content: "\f103"; }
+.flaticon-badminton:before { content: "\f104"; }
+.flaticon-soccer-ball-variant:before { content: "\f105"; }
+.flaticon-balls:before { content: "\f106"; }
